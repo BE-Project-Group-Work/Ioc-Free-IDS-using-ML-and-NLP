@@ -1,0 +1,57 @@
+===================================================================
+IoC-free IDS Project .gitignore
+Purpose: Prevents large data files, temporary Python/Jupyter files,
+and trained models from being uploaded to GitHub.
+===================================================================
+--- Datasets ---
+Ignore all raw and processed data files.
+Add the name of the folder where you store your raw CSVs.
+data/processed/CICIDS2017/
+*.csv
+*.parquet
+
+
+data/raw/HDFS_Logs_Dataset/
+*.csv
+*.parquet
+*.txt
+*.npz
+*.md
+
+
+
+data/processed/
+*.csv
+*.parquet
+
+--- Jupyter Notebook ---
+Ignore the checkpoints directory created by Jupyter.
+.ipynb_checkpoints/
+
+--- Python ---
+Ignore virtual environment folders.
+venv/
+env/
+.venv/
+.env/
+
+Ignore Python bytecode and cache folders.
+pycache/
+*.pyc
+*.pyo
+*.pyd
+
+--- Models & Outputs ---
+Ignore saved machine learning models.
+*.pkl
+*.joblib
+*.h5
+
+Ignore any output folders you might create for plots or reports.
+outputs/
+plots/
+
+--- IDE / Editor Specific ---
+Ignore configuration files from popular editors like VSCode.
+.vscode/
+.idea/
