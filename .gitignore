@@ -18,6 +18,11 @@ data/raw/HDFS_Logs_Dataset/
 *.npz
 *.md
 
+initial_CLI_implementation/
+data/raw
+data/processed
+initial_models/
+results
 
 
 data/processed/
